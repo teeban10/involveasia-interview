@@ -28,6 +28,12 @@ export function SearchBar({
           e.preventDefault()
           setSearchQuery(e.target.value)
         }}
+        onKeyDown={(e) => {
+          console.log(e.key, 'KEY')
+          if (e.key === 'Enter') {
+            searchPokemon()
+          }
+        }}
         name='search'
         type='text'
         placeholder='Search your Pokemon'
