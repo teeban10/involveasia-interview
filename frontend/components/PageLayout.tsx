@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import Image from 'next/image'
 import { BannerCarousel } from './BannerCarousel'
 import TopRightBanners from './TopRightBanners'
 
@@ -23,10 +24,12 @@ export const PageLayout = ({
       <div className='flex flex-1'>
         {/* Left Sidebar - Sticky */}
         <aside className='w-52 sticky top-0 pt-3 px-4 h-[500px]'>
-          <img
+          <Image
             src='/Verts.jpg'
             alt='Vertical-Image 1'
-            className=' object-fill h-full'
+            width={208}
+            height={500}
+            className='object-fill h-full'
           />
         </aside>
         {/* Main Content Area */}
@@ -34,10 +37,12 @@ export const PageLayout = ({
 
         {/* Right Sidebar - Sticky */}
         <aside className='w-[400px] h-[500px] pt-3 sticky top-0 px-4'>
-          <img
+          <Image
             src='/Pika.jpg'
             alt='Vertical-Image 1'
-            className=' object-cover object-center h-full w-full'
+            width={400}
+            height={500}
+            className='object-cover object-center h-full w-full'
           />
         </aside>
       </div>

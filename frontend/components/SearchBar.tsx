@@ -40,7 +40,6 @@ export function SearchBar({
         Search
       </Button>
       <Button
-        disabled={isDisabled}
         onClick={reset}
         variant='outline'
         className='border-orange-400 text-orange-400 hover:bg-orange-50'

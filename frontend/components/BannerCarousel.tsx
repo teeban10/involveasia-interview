@@ -39,7 +39,7 @@ export function BannerCarousel() {
               <Card className='pt-3 pb-1 shadow-none border-none h-full'>
                 <CardContent className="p-0">
                   <div className='relative w-full h-[258px]'>
-                    <img src={_} alt="Pokemon" className='object-cover w-full h-full' />
+                    <Image src={_} alt="Pokemon" width={2000} height={258} className='object-cover w-full h-full' />
                   </div>
                 </CardContent>
               </Card>
