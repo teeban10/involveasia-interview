@@ -15,7 +15,6 @@ app.use(helmet())
 
 app.get(
   '/',
-  serverAuthentication,
   (req: Request, res: Response) => {
     res.json({ message: 'Health Check OK' })
   }
