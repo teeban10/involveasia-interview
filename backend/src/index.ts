@@ -22,6 +22,7 @@ app.get(
 )
 app.get(
   '/api/pokemons',
+  serverAuthentication,
   async (req: Request, res: Response) => {
     try {
       const { limit = 50, current = 0 } = req.query
